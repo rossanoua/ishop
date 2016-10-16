@@ -1,3 +1,5 @@
+
+/*top section of header styles*/
 header, .main, footer{
     margin:0 auto;
     padding:0;
@@ -32,17 +34,34 @@ header {
 
 .left h1, p{
     margin:0;
+    transform: skew(12deg) ;
+}
+
+.right p:last-child{
+    font-weight:bold;
+    font-size:20px;
 }
 
 .right{
+    display: flex;
+    flex-flow: column;
+    align-items:flex-end;
     align-self:center;
     order: 2;
 }
+
+/*end styles for top section of header*/
+
+/*styles for nav section*/
 
 header nav {
     flex-basis: 100%;
     margin: -23px 0 0 0;
     order: 3;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    align-items:center;
     border-radius: 5px;
     background: #c1d574;
     background: -moz-linear-gradient(top, #c1d574 0%, #96b142 49%, #96b142 51%, #88a53a 100%, #88a53a 100%, #88a53a 100%);
@@ -51,99 +70,58 @@ header nav {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1d574', endColorstr='#88a53a',GradientType=0 );
 }
 
+header nav .nav-left{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:flex-start;
+    align-items:flex-start;
+}
+
+
 header nav ul{
     padding: 0;
     margin: 0;
-    list-style: none;
     display: flex;
     flex-flow: row nowrap;
-    justify-content:space-between;
-    align-items:flex-start;
+    list-style: none;
 }
 
 header nav ul li {
     padding: 15px;
 }
 
-header nav ul li:first-child {
+header nav div ul li:first-child {
     margin-left:10px;
 }
 
-
-
-header nav ul li:last-child {
-    color: green;
+/*header nav */
+.nav-right ul li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items:flex-end;
+    color: #88A632;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    margin-right: 20px;
 }
-header nav ul li:hover {
-    background-color: grey;
+
+.nav-left ul li:hover {
+    background-color: #88A632;
+    cursor: pointer;
 }
-/*header .first-line {*/
-    /*display: flex;*/
-    /*margin: 0;*/
-    /*flex-flow: row nowrap;*/
-    /*justify-content: space-between;*/
-    /*align-items: center;*/
-    /*color: white;*/
-    /*height: 146px;*/
-    /*width: 1100px;*/
-    /*background-image: url(../img/header.png);*/
-    /*-webkit-background-size: cover;*/
-    /*background-size: cover;*/
-/*}*/
 
-/*header h1{*/
-    /*margin:0;*/
-/*}*/
+.nav-right ul li:before {
+    content: url(../img/basket.jpg);
+    position: relative;
+    left: -4px;
+    top: 2px;
+}
 
-/*header div{*/
-    /*margin:45px 100px;*/
-/*}*/
+.nav-right ul li:hover{
+    cursor: pointer;
+}
 
-/*header div:first-child{*/
-    /*align-self:flex-start;*/
-/*}*/
-
-/*header div:last-child{*/
-    /*align-self:flex-end;*/
-/*}*/
-
-/*header .left p{*/
-    /*text-transform: uppercase;*/
-    /*margin:0;*/
-/*}*/
-
-/*header .right p{*/
-    /*margin:3px 0;*/
-/*}*/
-
-/*header .right p:last-child{*/
-    /*font-weight:bold;*/
-/*}*/
-
-/*header nav {*/
-    /*align-self: center;*/
-    /*width: 900px;*/
-    /*height: 52px;*/
-    /*margin: -26px 0 0 0;*/
-    /*border-radius: 5px;*/
-    /*background: #c1d574;*/
-    /*background: -moz-linear-gradient(top, #c1d574 0%, #96b142 49%, #96b142 51%, #88a53a 100%, #88a53a 100%, #88a53a 100%);*/
-    /*background: -webkit-linear-gradient(top, #c1d574 0%,#96b142 49%,#96b142 51%,#88a53a 100%,#88a53a 100%,#88a53a 100%);*/
-    /*background: linear-gradient(to bottom, #c1d574 0%,#96b142 49%,#96b142 51%,#88a53a 100%,#88a53a 100%,#88a53a 100%);*/
-    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1d574', endColorstr='#88a53a',GradientType=0 );*/
-/*}*/
-
-/*header nav ul{*/
-    /*padding:0;*/
-    /*color:white;*/
-    /*display: flex;*/
-    /*flex-flow: row nowrap;*/
-    /*justify-content:flex-start;*/
-    /*list-style: none;*/
-/*}*/
-
-/*header nav ul li{*/
-    /*padding: 0 15px;*/
-    /*text-transform: uppercase;*/
-/*}*/
-
+/*end header nav*/
