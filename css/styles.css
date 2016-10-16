@@ -43,11 +43,16 @@ header {
 }
 
 .right{
+    order: 2;
+    display: flex;
+}
+
+address{
+    font-style: normal;
     display: flex;
     flex-flow: column;
     align-items:flex-end;
     align-self:center;
-    order: 2;
 }
 
 /*end styles for top section of header*/
