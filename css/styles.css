@@ -119,7 +119,9 @@ header nav div ul li:first-child {
 
 .nav-left ul li:hover {
     background-color: #88A632;
+    color: white;
     cursor: pointer;
+    opacity: 0.8;
 }
 
 .nav-right ul li:before {
@@ -219,14 +221,16 @@ article {
     align-items:stretch;
 }
 
-.right ul, .left ul{
+.right-prod-nav ul, .left-prod-nav ul{
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     list-style: none;
 }
 
+.right-prod-nav ul li{
 
+}
 
 /*end product styles*/
 
