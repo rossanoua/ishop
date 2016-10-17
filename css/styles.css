@@ -290,6 +290,10 @@ aside{
     flex: 2 1 200px;
 }
 
+[class^=button]{
+    color: green;
+}
+
 /*end aside styles*/
 
 /*end .main styles*/
