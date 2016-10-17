@@ -284,14 +284,32 @@ article {
 /*aside styles*/
 
 aside{
+    margin:19px 0 0 0;
     order:2;
     display: flex;
     flex-flow: column nowrap;
     flex: 2 1 200px;
 }
 
-[class^=button]{
-    color: green;
+[class^=button] h4{
+    width:189px;
+    text-align: center;
+    padding:12px 0;
+    text-transform: uppercase;
+    font-size:12px;
+    border-radius: 6px;
+    font-weight:normal;
+    color: white;
+    border:1px solid #c1e078;
+    background: #c1e078; /* Old browsers */
+    background: -moz-linear-gradient(top, #c1e078 0%, #9dc042 50%, #72a51a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #c1e078 0%,#9dc042 50%,#72a51a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #c1e078 0%,#9dc042 50%,#72a51a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1e078', endColorstr='#72a51a',GradientType=0 ); /* IE6-9 */
+}
+
+[class^=button] h4:hover{
+    border:1px solid #000000;
 }
 
 /*end aside styles*/
