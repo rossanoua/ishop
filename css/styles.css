@@ -27,6 +27,10 @@ header {
     align-items: stretch;
 }
 
+.left, .right{
+    opacity: 0.8;
+}
+
 .left {
     order: 1;
     align-self: center;
@@ -144,6 +148,7 @@ header nav div ul li:first-child {
     flex-flow: row nowrap;
     margin: 0 8vw;
     background-color: #FEFEFE;
+    box-shadow: 0 4px 4px -2px gray, 4px 0 4px -2px gray, -4px 0  4px -2px gray;
 }
 /*article styles*/
 article {
@@ -198,8 +203,9 @@ article {
     color: #666666;
 }
 
-.price{
+.product .price{
     text-align: center;
+    color: #889564;
 }
 
 .buy {
@@ -224,8 +230,7 @@ article {
     justify-content:space-between;
     align-items:stretch;
     background-color: #fafafa;
-    /*background-color: grey;*/
-    border-radius: 10px;
+    border-radius: 17px;
     margin:8px 3vw;
 }
 
@@ -411,6 +416,102 @@ aside {
 
 /*footer styles*/
 
+footer{
+    font-size:12px;
+    margin-bottom:40px;
 
+}
+footer a{
+    text-decoration: none;
+}
 
+footer .base2{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.left-footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    align-items:center;
+    margin: 0 0 0 20px;
+}
+
+footer ul{
+    padding: 0;
+    list-style:none;
+}
+
+.left-footer ul {
+    margin:20px 15px;
+}
+
+.left-footer ul:first-child > li:first-child a:first-child {
+    color: #a7bb76;
+}
+.left-footer ul:first-child > li:first-child a:first-child:hover {
+    color: #000;
+}
+
+.left-footer a{
+    color: #666666;
+}
+
+/*text color for second and third section*/
+
+.left-footer ul:nth-child(2), .left-footer ul:last-child{
+    color: #83a03c;
+}
+
+/*end text color for second and third section*/
+
+/*rss and social section styles*/
+.left-footer ul:last-child ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:flex-start;
+    align-items:center;
+    margin: 0;
+}
+
+.left-footer ul:last-child ul li {
+    margin:3px 5px;
+    font-weight:bold;
+    padding:4px 7px;
+    border:1px solid white;
+    border-radius: 6px;
+    background: #bacf6c; /* Old browsers */
+    background: -moz-linear-gradient(top, #bacf6c 0%, #a6bf53 50%, #81a231 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #bacf6c 0%,#a6bf53 50%,#81a231 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #bacf6c 0%,#a6bf53 50%,#81a231 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bacf6c', endColorstr='#81a231',GradientType=0 ); /* IE6-9 */
+}
+
+.left-footer ul:last-child ul li:hover {
+    border: 1px solid #000;
+}
+
+.left-footer ul:last-child ul a {
+    color: white;
+}
+
+/* end rss and social section styles*/
+/* "designed by" styles*/
+
+footer .base2 div:last-child{
+    align-self:flex-end;
+    color: #cccccc;
+    margin: 0 15px 15px 0;
+}
+
+footer .base2 div:last-child a{
+    color: #cccccc;
+}
+
+/*end "designed by" styles*/
 /*end footer styles*/
