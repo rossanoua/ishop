@@ -290,7 +290,7 @@ aside {
     flex-flow: column nowrap;
     flex: 2 1 98px;
 }
-
+/*button styles*/
 [class^=button] h4 {
     width: 189px;
     text-align: center;
@@ -312,7 +312,8 @@ aside {
 [class^=button] h4:hover{
     border:1px solid #000000;
 }
-
+/*end button styles*/
+/*categories-list styles*/
 .categories-list ul{
     font-size:14px;
     color: #959595;
@@ -346,6 +347,58 @@ aside {
     background: linear-gradient(to bottom, #d0df95 0%,#a7c04f 51%,#809e2e 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0df95', endColorstr='#809e2e',GradientType=0 );
 }
+/*end categories-list styles*/
+
+/*promo styles*/
+
+.promo{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:center;
+    align-items:center;
+}
+
+.promo-list div{
+    margin:3px 0;
+    border-radius: 14px;
+    padding:5px 0;
+}
+
+.promo p {
+    margin:7px;
+    font-size: 10px;
+}
+
+.promo a{
+    text-decoration: none;
+}
+
+/*first promo styles*/
+.promo .promo-list div:first-child {
+    background-color: #fff8d8;
+}
+
+.promo .promo-list div:first-child p:first-child{
+    color: #8f7c38;
+}
+
+.promo .promo-list div:first-child p:last-child {
+    color: #676767;
+
+}
+/*end first promo styles*/
+
+
+.promo .promo-list div:nth-child(2){
+    background-color: #eeffd8;
+}
+
+.promo .promo-list div:last-child{
+    background-color: #d8faff;
+}
+
+
+/*end promo styles*/
 
 /*end aside styles*/
 
