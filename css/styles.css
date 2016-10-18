@@ -382,6 +382,18 @@ aside {
     font-size: 10px;
 }
 
+ .promo-list div:first-child a{
+    color: #8f7c38;
+}
+
+ .promo-list div:nth-child(2) a {
+    color: #768f38;
+ }
+
+ .promo-list div:last-child a {
+    color: #559aa0;
+ }
+
 .promo a{
     text-decoration: none;
 }
