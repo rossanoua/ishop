@@ -431,7 +431,7 @@ aside {
 footer{
     font-size:12px;
     margin-bottom:40px;
-
+    white-space:nowrap;
 }
 footer a{
     text-decoration: none;
@@ -527,3 +527,47 @@ footer .base2 div:last-child a{
 
 /*end "designed by" styles*/
 /*end footer styles*/
+
+/*media queries*/
+@media screen and (max-width : 890px) {
+    footer .base2{
+        flex-flow: row wrap;
+        justify-content:center;
+    }
+}
+@media screen and (max-width : 835px){
+    header nav ul {
+        flex-flow: row wrap;
+    }
+    article{
+        flex:4 1 200px;
+    }
+    .left-prod-nav ul{
+        flex-flow: row wrap;
+    }
+    .right-prod-nav ul{
+        flex-flow: row wrap;
+    }
+    .main{
+        margin:70px 0 0 0;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    .left-footer{
+        flex-flow: row wrap;
+    }
+}
+
+@media screen and (max-width : 580px) {
+    .page-nav{
+        align-items:center;
+    }
+}
+
+@media screen and (max-width : 512px) {
+    body{
+        min-width: 500px;
+    }
+}
+/*end media queries*/
